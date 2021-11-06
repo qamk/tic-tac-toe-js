@@ -2,5 +2,46 @@
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  font: 14px Garamond, serif;
+  font: 18px/1.2 Garamond, serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-text-container {
+  max-width: 600px;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: normal;
+  margin-bottom: 0;
+}
+
+.title + .subtitle {
+  margin-top: 3px;
+  line-height: 1.1;
+  font-size: .8em;
+}
+
+.board-container {
+  display: grid;
+  width: 640px;
+  height: 500px;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  column-gap: 10px;
+  row-gap: 10px;
+  margin: 0 auto;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(320deg, #aea245, #74b69d) 1;
+}
+
+.cell {
+  background-color: #bbddbb;
 }
