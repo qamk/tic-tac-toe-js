@@ -17,7 +17,7 @@ header {
 }
 
 .title {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: normal;
   margin-bottom: 0;
@@ -26,16 +26,16 @@ header {
 .title + .subtitle {
   margin-top: 3px;
   line-height: 1.1;
-  font-size: .8em;
+  font-size: .8rem;
 }
 
 .board-container {
   display: grid;
-  width: 640px;
+  width: 600px;
   height: 500px;
   grid-template-columns: repeat(3, minmax(100px, 1fr));
-  column-gap: 10px;
-  row-gap: 10px;
+  column-gap: 5px;
+  row-gap: 5px;
   margin: 0 auto;
   border-width: 3px;
   border-style: solid;
@@ -44,4 +44,42 @@ header {
 
 .cell {
   background-color: #bbddbb;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-size: 1.5rem;
+}
+
+#game_messages {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#game_messages > [class|=game] {
+  display: inline-block;
+  margin: .9rem .5rem;
+}
+
+.game-text {
+  font-family: 'Courier New', Courier, monospace;
+  color: #d44;
+  font-weight: 600;
+}
+
+.game-button {
+  margin: .5em .2rem;
+  padding: .2rem;
+  background-color: rgba(150, 150, 150, .1);
+  border: none;
+}
+
+.add:active {
+  border: 1px dashed #99bbab;
+}
+
+
+#start:active {
+  border: 2px dashed #bb6666;
 }
